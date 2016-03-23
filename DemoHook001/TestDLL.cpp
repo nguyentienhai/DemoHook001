@@ -9,9 +9,9 @@ HHOOK hGlobalHook = NULL;
 __declspec(dllexport) LRESULT CALLBACK FillKeyboard(int nCode, WPARAM wParam, LPARAM lParam)
 {
 	// nếu sự kiện là nhấn phím và mã phím là Enter
-	if(nCode == HC_ACTION && wParam == 13)
+	if((nCode == HC_ACTION) && (wParam == 13))
 	{
-		MessageBox(0, L"haint say hello :D", L"Hello", 0);
+		MessageBox(0, L"haint sao lai co 2 cai nhi", L"Hello", 0);
 		return 1;
 	}
 
